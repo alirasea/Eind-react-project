@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { gsap } from 'gsap';
 import base64ImageData from './ImageData';
 import Search from './search';
+import { Link } from 'react-router-dom';
 
 export default class Nav extends Component {
     componentDidMount() {
@@ -117,6 +118,7 @@ export default class Nav extends Component {
     </div>
 <div className="RightSideContiner">
    <Search />
+   <Link to="/login">
     <div id='LOGINcon'>
     <svg width="113" height="33" viewBox="0 0 113 33" fill="none" >
         <g id="Frame 1" clip-path="url(#clip0_1_2)">
@@ -138,6 +140,8 @@ export default class Nav extends Component {
         </defs>
         </svg>
     </div>
+    </Link>
+    <Link to="/help">
     <div id="helpco">
             <svg width="80" height="45" viewBox="0 0 80 45" fill="none" >
                 <g id="Frame1" clip-path="url(#clip0_1_6)">
@@ -158,6 +162,8 @@ export default class Nav extends Component {
                 </defs>
                 </svg>
         </div>
+        </Link>
+        <Link to="/shoppingbag">
         <div id="SHOPPING">
             <svg width="117" height="33" viewBox="0 0 117 33" fill="none">
                 <g id="Frame 1" clip-path="url(#clip0_1_2)">
@@ -188,6 +194,7 @@ export default class Nav extends Component {
                 </defs>
                 </svg>
         </div>
+        </Link>
 </div>
 
     </nav>
