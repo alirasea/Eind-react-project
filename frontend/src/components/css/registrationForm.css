@@ -1,0 +1,40 @@
+.form-container {
+    width: 700px;
+    margin-top: 15%;
+    margin-left: 30%;
+    background-color: rgb(196, 196, 249);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: fadeIn 1s ease;
+  }
+.form-container input {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: fadeIn 1s ease;
+  }
+  .btn-register {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-register:hover {
+    background-color: darkblue;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
