@@ -5,9 +5,9 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
 const path = require('path');
-
+const cors = require('cors');
 const app = express();
-
+app.use(cors())
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
@@ -22,10 +22,10 @@ app.use('/images', express.static('images'));
 const PORT = process.env.PORT ;
 const password=process.env.password
 
-const urldb=`mongodb+srv://akhras:${password}@akhras.yjxfgn6.mongodb.net/`
+const urldb=`mongodb+srv://alirasea12345:${password}@cluster0.zxsehmz.mongodb.net/`
 mongoose.connect(urldb)
         .then((result)=>console.log("connected to db"))
-        .catch((err)=>console.log("err"))
+        .catch((err)=>console.log("can not connected to db"))
 
 
 // mahtab'public' directory
